@@ -11,8 +11,8 @@
 
 ```bash
 sudo apt install git -y
-git clone https://github.com/<your-username>/server-infra.git
-cd server-infra/vps-config
+git clone https://github.com/<your-username>/public-edge-server.git
+cd public-edge-server
 bash bootstrap.sh
 ```
 
@@ -83,8 +83,8 @@ ssh new-vps "sudo tar xzf /tmp/vps-state.tar.gz -C / && sudo systemctl restart t
 ### 在新 VPS 上重跑部署
 
 ```bash
-git clone <this-repo>
-cd vps-config && bash bootstrap.sh
+git clone https://github.com/<your-username>/public-edge-server.git
+cd public-edge-server && bash bootstrap.sh
 ```
 
 | 组件 | 有状态数据 | 不迁的影响 |
